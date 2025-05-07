@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Cursos de Moda y Diseño</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Cursos de Moda y Diseño</h1>
+    </header>
+
+    <div class="container">
+      <button class="boton-crear" onclick="mostrarFormulario()">
+        🧵 Crear nuevo curso
+      </button>
+      <button
+        id="botonEliminarTodos"
+        class="boton-eliminar"
+        style="display: none"
+        onclick="eliminarTodos()"
+      >
+        🗑️ Eliminar todos los cursos
+      </button>
+
+      <div id="formularioCurso">
+        <form id="nuevoCursoForm">
+          <label>ID:</label>
+          <input type="text" name="id" required />
+
+          <label>Nombre del curso:</label>
+          <input type="text" name="nombre" required />
+
+          <label>Imagen del curso (URL):</label>
+          <input type="text" name="imagen" required />
+
+          <label>Nro Créditos:</label>
+          <input type="number" name="creditos" required />
+
+          <label>Docentes:</label>
+          <input type="text" name="docentes" required />
+
+          <label>Temas del curso:</label>
+          <input type="text" name="temas" required />
+
+          <label>Alumnos matriculados:</label>
+          <input type="number" name="alumnos" required />
+
+          <label>Duración (semanas):</label>
+          <input type="number" name="duracion" required />
+
+          <label>Nota mínima:</label>
+          <input type="number" name="notaMinima" required />
+
+          <button type="submit">Guardar curso</button>
+        </form>
+      </div>
+
+      <div id="listaCursos"></div>
+    </div>
+
+    <script src="./javascript.js"></script>
+  </body>
+</html>

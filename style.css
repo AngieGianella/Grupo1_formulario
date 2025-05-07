@@ -1,0 +1,136 @@
+body {
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f9;
+  }
+
+  header {
+    background-color: #6c5ce7;
+    color: white;
+    padding: 30px 0;
+    text-align: center;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+  }
+
+  h1 {
+    margin: 0;
+    font-size: 32px;
+  }
+
+  .container {
+    max-width: 900px;
+    margin: 30px auto;
+    padding: 20px;
+  }
+
+  .boton-crear,
+  .boton-eliminar {
+    background-color: #00b894;
+    color: white;
+    border: none;
+    padding: 12px 24px;
+    font-size: 16px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    display: block;
+    margin: 0 auto 25px auto;
+  }
+
+  .boton-crear:hover {
+    background-color: #019875;
+  }
+
+  .boton-eliminar {
+    background-color: #d63031;
+  }
+
+  .boton-eliminar:hover {
+    background-color: #c0392b;
+  }
+
+  #formularioCurso {
+    display: none;
+    background-color: white;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 30px;
+  }
+
+  form label {
+    display: block;
+    margin-top: 15px;
+    font-weight: bold;
+  }
+
+  form input {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+  }
+
+  form button {
+    margin-top: 20px;
+    background-color: #6c5ce7;
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    font-size: 16px;
+    border-radius: 6px;
+    cursor: pointer;
+  }
+
+  form button:hover {
+    background-color: #5a4cc6;
+  }
+
+  .curso {
+    background-color: white;
+    padding: 20px;
+    border-radius: 12px;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+    display: flex;
+    gap: 20px;
+    align-items: center;
+  }
+
+  .curso img {
+    width: 180px;
+    height: auto;
+    border-radius: 10px;
+    object-fit: cover;
+  }
+
+  .curso-detalles {
+    flex: 1;
+  }
+
+  .curso h3 {
+    margin-top: 0;
+    color: #2d3436;
+  }
+
+  .curso p {
+    margin: 6px 0;
+    color: #636e72;
+  }
+
+  .boton-eliminar-curso {
+    background-color: #d63031;
+    color: white;
+    border: none;
+    padding: 10px 14px;
+    font-size: 14px;
+    border-radius: 6px;
+    cursor: pointer;
+    margin-top: 10px;
+  }
+
+  .boton-eliminar-curso:hover {
+    background-color: #c0392b;
+  }
